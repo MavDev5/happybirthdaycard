@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Favorite Person</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="heart-bg" id="heart-bg"></div>
+
+    <div class="book-container">
+        <section class="page active" id="page1">
+            <h1>The Countdown Begins...</h1>
+            <div class="countdown">
+                <div class="time-box"><span id="days">00</span><p>Days</p></div>
+                <div class="time-box"><span id="hours">00</span><p>Hours</p></div>
+                <div class="time-box"><span id="minutes">00</span><p>Mins</p></div>
+                <div class="time-box"><span id="seconds">00</span><p>Secs</p></div>
+            </div>
+            <button onclick="nextPage(2)">Open Your Card ✨</button>
+        </section>
+
+        <section class="page" id="page2">
+            <div class="photo-frame">
+                <img src="pic1.png" alt="Memory 1">
+            </div>
+            <h2>Where it all started</h2>
+            <p>I still remember the first time I saw you. My heart skipped a beat, and it hasn't slowed down since.</p>
+            <button onclick="nextPage(3)">Keep Going →</button>
+        </section>
+
+        <section class="page" id="page3">
+            <div class="photo-frame">
+                <img src="pic2.PNG" alt="Memory 2">
+            </div>
+            <h2>My Favorite Smile</h2>
+            <p>No matter how hard my day is, one look at you makes everything better. You are my sunshine.</p>
+            <button onclick="nextPage(4)">One more thing... →</button>
+        </section>
+
+        <section class="page" id="page4">
+            <div class="final-cake">🎂</div>
+            <h2>Happy Birthday, Beautiful Tanu!</h2>
+            <p>Today is all about you. I hope your day is as wonderful and bright as your soul. I love you to the moon and back.</p>
+            <p class="signature">Forever & Always,<br>Preetham</p>
+            <button onclick="nextPage(1)">Back to Start</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
